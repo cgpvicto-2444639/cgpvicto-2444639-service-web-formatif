@@ -13,7 +13,7 @@ const accessLogStream = fs.createWriteStream('./access.log', {flags: 'a'});
 morgan.token('date-clf', function() {
     const now = new Date();
     const day = String(now.getDate()).padStart(2, '0');
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const months = ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Jui', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec'];
     const month = months[now.getMonth()];
     const year = now.getFullYear();
     const hours = String(now.getHours()).padStart(2, '0');
